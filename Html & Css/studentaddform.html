@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addmission Form</title>
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <form method="post">
+        <fieldset>
+            <label for="fname">Full Name:</label><br>
+            <input type="text" placeholder="Enter Full Name" id="fname" name="name">
+            <hr>
+            <label for="">Email:</label><br>
+            <input type="email" placeholder="xyz@gmail.com" name="emailinput">
+            <hr>
+            <label for="password">Password: <sup><font color="red">*</font></sup></label><br>
+            <input type="password" id="password" required>
+            <hr>
+            <label for="">Contact Number:</label><br>
+            <input type="tel" name="" id="" >
+            <hr>
+            <label for="">Date of Birth:</label><br>
+            <input type="date">
+            <hr>
+            <label for="">Gender:</label><br>
+            <input type="radio" name="gender" value="Male" ><label>Male</label>
+            <input type="radio" name="gender" value="female"><label>Female</label>
+            <hr>
+            <label for="">Hobbies</label><br>
+            <input type="checkbox" name="hobbyone" value="playing"> <label for="">Playing</label>
+            <input type="checkbox" name="hobbyTwo" value="singing"> <label for="">singing</label>
+            <input type="checkbox" name="hobbyThree" value="coding"> <label for="">Coding</label>
+            <hr>
+            <label for="">Address:</label><br>
+            <input type="text" name="Address">
+            <hr>
+            <label for="">Course</label><br>
+            <select name="" id="" name="Course">
+                <option value="">Select course</option>
+                <option value="Mern">Mern stack</option>
+                <option value="Jstack">Java full stack</option>
+                <option value="pstack">python full stack</option>
+                <option value="ML">Machine Learning</option>
+            </select>
+            <hr>
+            <label for="">Profile picture:</label><br>
+            <input type="file" name="profile">
+            <hr>
+            <label for="">Favourite colour:</label><br>
+            <input type="color" name="favcolour">
+            <hr>
+            <label for="">Range slider:</label><br>
+            <input type="range" min="0" max="2000" value="500">
+            <hr>
+            <input type="button" value="Reset" >
+            <br>
+            <br>
+            <input type="button" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,212 @@
+background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Master container splits the screen into 50/50 blocks */
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 935px;
+    height: 580px;
+    background-color: #000000;
+}
+
+/* Left Panel Styles */
+.panel-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.panel-left .brand-logo img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 24px;
+    background-color: #000000;
+}
+
+.panel-left h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    max-width: 350px;
+}
+
+.panel-left h1 span {
+    color: #ff304f; /* Accent color for 'close friends' */
+}
+
+.panel-left .promo-image img {
+    max-height: 250px;
+    object-fit: contain;
+    background-color: #000000;
+}
+
+/* Right Panel Styles */
+.panel-right {
+    flex: 1;
+    background-color: #121212; /* Dark card background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #262626;
+    border-radius: 4px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-box h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+}
+
+/* Form Controls */
+.input-group {
+    margin-bottom: 12px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: #1c1c1e;
+    border: 1px solid #3a3a3c;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.input-group input::placeholder {
+    color: #8e8e93;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #555;
+}
+
+/* Buttons */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0095f6; /* Instagram Blue */
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.login-btn:hover {
+    background-color: #1877f2;
+}
+
+.forgot-link {
+    margin-top: 20px;
+}
+
+.forgot-link a {
+    color: #8e8e93;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Divider line */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    color: #8e8e93;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #262626;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+/* Facebook Login & Signup text */
+.fb-login-btn {
+    background: none;
+    border: none;
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.fb-icon {
+    background-color: #0095f6;
+    color: #121212;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.signup-link {
+    font-size: 14px;
+    color: #8e8e93;
+}
+
+.signup-link a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .panel-left {
+        display: none; /* Hide promotional banner on tiny screens just like Instagram mobile site */
+    }
+    .panel-right {
+        background-color: transparent;
+        border: none;
+    }
+}

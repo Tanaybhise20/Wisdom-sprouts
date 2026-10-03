@@ -1,0 +1,21 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(54, 54, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.form-container{
+    background-color: beige;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 8px;
+}

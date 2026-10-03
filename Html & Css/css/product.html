@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .card{
+            width: 25rem;
+            border: 1px solid yellowgreen;
+            box-shadow: 1px 1px 1px 2px gray;
+            
+        }
+        .imgCard{
+            width: 100%;
+        }
+        .paddingCard{
+            padding: 10px;
+        }
+        .cardTitle{
+            color: red;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .cardDescr{
+            text-align: justify;
+        }
+        .btnGroup{
+            text-align: center;
+            margin: 10px auto;
+            /* display: none; */
+            visibility: hidden;
+
+        }
+        .card:hover .btnGroup{
+            /* display: block; */
+            visibility:visible
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: 0;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            background-color: rgb(88, 88, 88);
+        }
+        .priceStock{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./pens img/trimax.webp" alt="Trimax" class="imgCard">
+        <h3 class="cardTitle">Trimax</h3>
+        <p class="cardDescr paddingCard">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sapiente porro voluptatem ex! Adipisci nostrum laborum placeat nihil porro enim nobis quam et hic in deserunt corrupti, labore corporis.</p>
+        <div class="priceStock paddingCard">
+            <span>price: &#8377; 100</span>
+            <span class="badgeStock">In Stock</span>
+        </div>
+        <div class="btnGroup">
+            <button class="btn">Buy Now</button>
+            <button class="btn">Add To Cart</button>
+        </div>
+
+    </div>
+     <div class="card">
+        <img src="./pens img/pentonic.avif" alt="pentonic" class="imgCard">
+        <h3 class="cardTitle">Pentonic</h3>
+        <p class="cardDescr paddingCard">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sapiente porro voluptatem ex! Adipisci nostrum laborum placeat nihil porro enim nobis quam et hic in deserunt corrupti, labore corporis.</p>
+        <div class="priceStock paddingCard">
+            <span>price: &#8377; 150</span>
+            <span class="badgeStock">In Stock</span>
+        </div>
+        <div class="btnGroup">
+            <button class="btn">Buy Now</button>
+            <button class="btn">Add To Cart</button>
+        </div>
+
+    </div>
+     <div class="card">
+        <img src="./pens img/pinpoint.jpg" alt="pinpoint" class="imgCard">
+        <h3 class="cardTitle">Pinpoint</h3>
+        <p class="cardDescr paddingCard">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sapiente porro voluptatem ex! Adipisci nostrum laborum placeat nihil porro enim nobis quam et hic in deserunt corrupti, labore corporis.</p>
+        <div class="priceStock paddingCard">
+            <span>price: &#8377; 200</span>
+            <span class="badgeStock">In Stock</span>
+        </div>
+        <div class="btnGroup">
+            <button class="btn">Buy Now</button>
+            <button class="btn">Add To Cart</button>
+        </div>
+
+    </div>
+</body>
+</html>

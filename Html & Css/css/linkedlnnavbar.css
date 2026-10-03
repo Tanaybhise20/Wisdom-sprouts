@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav.navbarFirst{
+    height: 80px;
+    /* width: 100%; */
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftSideImg{
+    display: inline-block;
+    margin-left: 80px;
+    margin-bottom: 40px;
+
+}
+
+.leftSideImg img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.rightSideMenu{
+    list-style-type: none;
+    float: right;
+}
+.menuList{
+    display: inline-block;
+    margin: 30px;
+}
+a:link{}
+a:hover{}
+a:active{}
+a:visited{}
+
+.menuItem{
+    color: gray;
+    text-shadow: none;
+    text-decoration: none;
+    font-size: 16px;
+}
+.menuItem i{
+    font-size: 22px;
+    align-items: center;
+}
+.menuItem:hover{
+  background-color: black;
+  border-radius: 15px 0 15px 0;
+  cursor: pointer;
+
+}
+.fa-magnifying-glass {
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 80px;
+}
