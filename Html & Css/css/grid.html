@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            width: 630px;
+            height: 600px;
+        }
+        .Grapes{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 153px;
+            height: 105px;
+        }
+        .Staberry{
+            background-color: pink;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            width: 155px;
+            height: 105px;
+        }
+        .watermelon{
+            background-color: red;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 300px;
+            height: 340px;
+        }
+        .orange{
+            background-color: orange;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 315px;
+            height: 230px;
+        }
+        .papaya{
+            background-color: yellow;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 315px;
+            height: 250px;
+        }
+        .pineapple{
+            background-color: goldenrod;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 300px;
+            height: 250px;
+        }
+        .imgcontainer{
+            display: grid;
+            width: 750px;
+            height: 450px;
+        }
+        .img1{
+            background-color: rgb(6, 6, 73);
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 240px;
+            height: 175px;
+        }
+        .img2{
+            background-color: rgb(181, 128, 31);
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            width: 500px;
+            height: 175px;
+        }
+        .img3{
+            background-color: rgb(91, 91, 222);
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 485px;
+            height: 175px;
+        }
+        .img4{
+            background-color: rgb(222, 91, 91);
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 250px;
+            height: 175px;
+        }
+        .img5{
+            background-color: rgb(91, 222, 91);
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 240px;
+            height: 75px;
+        }
+        .img6{
+            background-color: rgb(222, 222, 91);
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            width: 240px;
+            height: 75px;          
+        }
+        .img7{
+            background-color: rgb(91, 222, 222);
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 250px;
+            height: 75px;
+        }
+         .layout{
+            /* width: 700px; */
+            /* height: 700px; */
+            display: grid;
+            grid-template-areas: 'nav nav nav nav nav nav nav'
+                        'asd main main main main main main'
+                        'asd c1 c1 c2 c2 c3 c3'
+                        'asd foo foo foo foo foo foo ';
+        }
+        .navbar{
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            grid-area: nav;
+        }
+        .asideBar{
+            background-color: gray;
+            height: 85vh;
+            grid-area: asd;
+        }
+        .mainContent{
+            background-color: rgb(216, 216, 216);
+            height: 40vh;
+            grid-area: main;
+        }
+        .contentOne{
+            border: 2px solid black;
+            height: 30vh;
+            grid-area: c1;
+        }
+        .contentTwo{
+            border: 2px solid black;
+            height: 30vh;
+            grid-area: c2;
+
+        }
+        .contentThree{
+            border: 2px solid black;
+            height: 30vh;
+            grid-area: c3;
+        }
+        .footer{
+            background-color: red ;
+            height: 15vh;
+            grid-area: foo;
+        }
+          @media screen and (max-width:500px) {
+                .layout{
+                    grid-template-areas:'nav'
+                                        'asd'
+                                        'main'
+                                        'c1'
+                                        'c2'
+                                        'c3'
+                                        'foo'
+                }
+        }
+        .grid.container{
+            width: 400px;
+            height: 400px;
+            display: grid;
+            margin: 0 auto;
+            background-color: rgb(186, 219, 67);
+        }
+        .grid1{
+            background-color: black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 130px;
+            height: 130px;
+        }
+        .grid2{
+            background-color: black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            width: 130px;
+            height: 130px;
+        }
+        .grid3{
+            background-color: black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 130px;
+            height: 130px;
+        }
+        .grid4{
+            background-color: black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 130px;
+            height: 130px;
+        }
+        .grid5{
+            background-color: black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            width: 130px;
+            height: 130px;
+        }
+        .grid6{
+            background-color: black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 130px;
+            height: 130px;
+        }
+        .grid7{
+            background-color: black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 130px;
+            height: 130px;
+        }
+        .grid8{
+            background-color: black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            width: 130px;
+            height: 130px;
+        }
+        .grid9{
+            background-color: black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 130px;
+            height: 130px;
+        }
+        .grid1:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .grid2:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .grid3:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .grid4:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .grid5:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .grid6:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .grid7:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .grid8:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        .grid9:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease-in-out;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Grapes">
+            <img src="./assets/grapes.jpg" alt="Grapes Image" width="153px" height="105px">
+        </div>
+        <div class="Staberry">
+            <img src="./assets/stawberry.jpg" alt="Strawberry Image" width="155px" height="105px">
+        </div>
+        <div class="watermelon">
+            <img src="./assets/watermelon.webp" alt="Watermelon Image" width="300px" height="340px">
+        </div>
+        <div class="orange">
+            <img src="./assets/orange.jpg" alt="Orange Image" width="315px" height="230px">
+        </div>
+        <div class="papaya">
+            <img src="./assets/papaya.webp" alt="Papaya Image" width="315px" height="250px">
+        </div>
+        <div class="pineapple">
+            <img src="./assets/pineapple.jpeg" alt="Pineapple Image" width="300px" height="250px">
+        </div>
+    </div>
+    <br>
+    <div class="imgcontainer">
+        <div class="img1"> 
+            <img src="./assets/img1.jpg" alt="" width="240px" height="175px" title="winter of my discontent">
+        </div>
+        <div class="img2">Instagram is toxic but I keep posting</div>
+        <div class="img3">Throwing my phone into the ocean</div>
+        <div class="img4">I am never leaving my room </div>
+        <div class="img5">Starting at the horizon thinking</div>
+        <div class="img6">This is water </div>
+        <div class="img7">Table for one please</div>
+    </div>
+    <br>
+       <div class="layout">
+        <div class="navbar">NAVBAR</div>
+        <div class="asideBar">ASIDEBAR</div>
+        <div class="mainContent">MAIN CONTENT</div>
+        <div class="contentOne">CONTENT 1</div>
+        <div class="contentTwo">CONTENT 2</div>
+        <div class="contentThree">CONTENT 3</div>
+        <div class="footer">FOOTER</div>
+    </div>
+    <br>
+    <div class="grid container">
+        <div class="grid1">
+            <img src="./assets/grid1.webp" alt="Grid Image 1" width="100%" height="100%">
+        </div>
+        <div class="grid2">
+            <img src="./assets/grid2.webp" alt="Grid Image 2" width="100%" height="100%">
+        </div>
+        <div class="grid3">
+            <img src="./assets/grid3.webp" alt="Grid Image 3" width="100%" height="100%">
+        </div>
+        <div class="grid4">
+            <img src="./assets/grid4.jpg" alt="Grid Image 4" width="100%" height="100%">
+        </div>
+        <div class="grid5">
+            <img src="./assets/grid5.webp" alt="Grid Image 5" width="100%" height="100%">
+        </div>
+        <div class="grid6">
+            <img src="./assets/grid6.jpg" alt="Grid Image 6" width="100%" height="100%">
+        </div>
+        <div class="grid7">
+            <img src="./assets/grid7.webp" alt="Grid Image 7" width="100%" height="100%">
+        </div>
+        <div class="grid8">
+            <img src="./assets/grid8.avif" alt="Grid Image 8" width="100%" height="100%">
+        </div>
+        <div class="grid9">
+            <img src="./assets/grid9.webp" alt="Grid Image 9" width="100%" height="100%">
+        </div>
+    </div>
+    <br>
+    <hr>
+</body>
+</html>
